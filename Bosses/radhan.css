@@ -1,0 +1,46 @@
+body {
+background-color: #4B0000;
+}
+            h1 {
+            font-size: 5em;
+            margin-top: 20px;
+            color: #f9c043;
+            font-family: 'Libertinus Serif Display', serif;
+            text-align: center;
+            }
+        p {
+            font-size: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .Radhan {
+            display:flex;
+            flex-wrap: nowrap;
+            justify-content: start;
+        }
+
+        .Radhan-info {
+            color:#f9c043;
+            max-width: 500px;
+            margin-top: 100px;
+            border:2px solid white;
+            margin-left: 550px;
+            padding: 3px;
+            text-align: center;
+        }
+
+
+        .underoverskrift {
+            color: #f9c043;
+            text-align: center;
+            margin-top: -300px;
+            margin-left: 100px;
+        }
+
+
+        .go-back {
+            margin-top: 100px;
+            font-size: 25px;
+            text-align: center;
+        }

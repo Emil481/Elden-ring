@@ -1,0 +1,45 @@
+body {
+background-color: #f9c043;
+}
+            h1 {
+            font-size: 5em;
+            margin-top: 20px;
+            color: #000000;
+            font-family: 'Libertinus Serif Display', serif;
+            text-align: center;
+            }
+        p {
+            font-size: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .Godfrey {
+            display:flex;
+            flex-wrap: nowrap;
+            justify-content: start;
+        }
+
+        .Godfrey-info {
+            color:#000000;
+            max-width: 500px;
+            margin-top: 20px;
+            border:2px solid white;
+            margin-left: auto;
+            padding: 3px;
+            text-align: center;
+        }
+
+
+        .underoverskrift {
+            color: #000000;
+            text-align: right;
+            margin-top: -200px;
+        }
+
+
+        .go-back {
+            margin-top: 100px;
+            font-size: 25px;
+            text-align: center;
+        }
