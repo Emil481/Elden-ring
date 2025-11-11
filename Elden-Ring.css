@@ -25,15 +25,34 @@ p {
 .image-link-container {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
 }
 
 
 a {
     color: #040200;
     text-decoration: none;
-    font-size: 40px;
-    align-items: center;
+    font-size: 30x;
 }
 
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 20px 0 0 0;
+    padding: 0
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2em;
+}
 

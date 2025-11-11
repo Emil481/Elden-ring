@@ -15,8 +15,7 @@ h1 {
         }
 .oppsett {
     display: grid;
-    grid-template-columns: repeat(6, 1fr)
-
+    grid-template-columns: 1fr 1fr 1fr
 }
 .oppsett div {
     border: solid black 2px;
@@ -25,38 +24,28 @@ h1 {
 }
 .div-0 {
     font-size: 40px;
-    grid-column: span 6;
+    grid-column: span 3;
     text-align: center;
 }
 .div-1 {
-    color: #0000;
+    color: #000000;
 }
 .div-2 {
-    color: #0000;
+    color: #000000;
 }
 .div-3 {
-    color: #0000;
+    color: #000000;
     grid-row: span 4;
 }
 .div-4 {
-    color: #0000;
+    color: #000000;
 }
 .div-5 {
-    color: #0000;
-}
-.div-6 {
-    color: #0000;
-}
-.div-7 {
-    color: #0000;
-    border-color: tomato;
-}
-.div-8 {
-    color: #0000;
+    color: #000000;
 }
 
 .go-back {
-    margin-top: 100px;
+    margin-top: -100px;
     font-size: 25px;
     text-align: center;
 }
