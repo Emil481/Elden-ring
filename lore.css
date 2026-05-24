@@ -1,0 +1,66 @@
+﻿body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #040200;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.65)), url("bilder/ekte nokron.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    font-family: 'Libertinus Serif Display', serif;
+}
+
+.oppsett {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.oppsett div {
+    padding: 16px;
+    text-align: center;
+    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.58);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.div-0 {
+    grid-column: span 3;
+    font-size: 40px;
+}
+
+h2 {
+    color: #f9c043;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.45;
+}
+
+.go-back {
+    padding-bottom: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.go-back a {
+    color: white;
+    text-decoration: none;
+}
+
+.go-back a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .oppsett {
+        grid-template-columns: 1fr;
+    }
+
+    .div-0 {
+        grid-column: span 1;
+    }
+}

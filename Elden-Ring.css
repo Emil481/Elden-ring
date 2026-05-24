@@ -1,58 +1,67 @@
-body {
+﻿body {
     margin: 0;
     min-height: 100vh;
     background-color: #040200;
-    background-image: url("Bosses/bilder/Elden-Ring-Limgrave.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)), url("Bosses/bilder/Elden-Ring-Limgrave.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    font-family: 'Libertinus Serif Display', serif;
+}
+
+.front-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
 }
 
 h1 {
     font-size: 5em;
-    margin-top: 20px;
-    color: #6B8E5C ;
-    text-align: center;
-    font-family: 'Libertinus Serif Display', serif;
+    margin: 0 0 30px;
+    color: #f9c043;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
 }
 
-p {
-    font-size: 2em;
-    max-width: 1200px;
-}
-
-
-.image-link-container {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 18px;
 }
 
+nav li {
+    margin: 0;
+}
 
 a {
+    display: block;
+    color: #f9c043;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: 2px solid #f9c043;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+a:hover {
+    background-color: #f9c043;
     color: #040200;
-    text-decoration: none;
-    font-size: 30x;
 }
 
-header {
-    padding: 20px;
-    text-align: center;
-}
+@media (max-width: 700px) {
+    h1 {
+        font-size: 3.2em;
+    }
 
-header nav ul {
-    list-style-type: none;
-    margin: 20px 0 0 0;
-    padding: 0
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
 }
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 1.2em;
-}
-

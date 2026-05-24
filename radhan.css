@@ -1,0 +1,107 @@
+﻿body {
+    background-color: #4B0000;
+}
+
+h1 {
+    font-size: 5em;
+    margin-top: 20px;
+    color: #f9c043;
+    font-family: 'Libertinus Serif Display', serif;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.oppsett {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.oppsett div {
+    border: 2px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+.div-0 {
+    font-size: 40px;
+    grid-column: span 3;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f9c043;
+}
+
+.div-1 {
+    color: #f9c043;
+}
+
+.div-2 {
+    color: #f9c043;
+}
+
+.div-3 {
+    color: #f9c043;
+    grid-row: span 3;
+}
+
+.div-4 {
+    color: #f9c043;
+}
+
+.div-5 {
+    color: #f9c043;
+}
+
+.go-back {
+    margin-top: 100px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.go-back a {
+    color: #f9c043;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Libertinus Serif Display', serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.div-4,
+.div-5 {
+    font-size: 1.15em;
+    line-height: 1.4;
+}
+
+@media (max-width: 800px) {
+    .oppsett {
+        grid-template-columns: 1fr;
+    }
+
+    .div-0 {
+        grid-column: span 1;
+        font-size: 32px;
+    }
+
+    .div-3 {
+        grid-row: span 1;
+    }
+
+    .go-back {
+        margin-top: 30px;
+    }
+}
