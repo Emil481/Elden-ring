@@ -91,3 +91,8 @@ img {
         margin-top: 30px;
     }
 }
+
+.div-4,
+.div-5 {
+    min-height: 120px;
+}
