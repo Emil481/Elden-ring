@@ -1,53 +1,141 @@
-﻿body {
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
     min-height: 100vh;
     background-color: #040200;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.65)), url("bilder/ekte nokron.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.8)), url("bilder/ekte nokron.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
     color: white;
     font-family: 'Libertinus Serif Display', serif;
 }
 
-.oppsett {
+.page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.hero {
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 18px;
+    color: #f9c043;
+    font-size: 5em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.85);
+}
+
+.hero p {
+    max-width: 820px;
+    margin: 0 auto;
+    font-size: 1.45em;
+    line-height: 1.45;
+    text-shadow: 2px 2px 5px black;
+}
+
+.intro-grid,
+.two-column {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 30px;
+    gap: 18px;
+    margin: 24px 0;
 }
 
-.oppsett div {
-    padding: 16px;
-    text-align: center;
-    border: 3px solid white;
-    background-color: rgba(0, 0, 0, 0.58);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+.two-column {
+    grid-template-columns: 1fr 1fr;
 }
 
-.div-0 {
-    grid-column: span 3;
-    font-size: 40px;
+article,
+.wide-section {
+    border: 2px solid rgba(249, 192, 67, 0.85);
+    background-color: rgba(0, 0, 0, 0.72);
+    padding: 18px;
 }
 
 h2 {
-    color: #f9c043;
     margin-top: 0;
+    color: #f9c043;
+    font-size: 1.8em;
 }
 
-p {
-    font-size: 1.2em;
-    line-height: 1.45;
+h3 {
+    margin: 8px 0;
+    color: #f9c043;
+}
+
+p,
+li {
+    font-size: 1.15em;
+    line-height: 1.48;
+}
+
+ul {
+    margin: 0;
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.wide-section {
+    margin: 24px 0;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.timeline div {
+    border-left: 3px solid #f9c043;
+    padding-left: 14px;
+}
+
+.timeline span {
+    display: inline-grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    color: #040200;
+    background-color: #f9c043;
+    font-weight: bold;
+}
+
+.image-section {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.image-section img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border: 2px solid white;
 }
 
 .go-back {
-    padding-bottom: 30px;
-    font-size: 25px;
+    margin: 28px 0 8px;
     text-align: center;
 }
 
 .go-back a {
-    color: white;
+    color: #f9c043;
+    font-size: 1.5em;
     text-decoration: none;
 }
 
@@ -55,12 +143,31 @@ p {
     text-decoration: underline;
 }
 
-@media (max-width: 800px) {
-    .oppsett {
+@media (max-width: 900px) {
+    .intro-grid,
+    .two-column,
+    .timeline,
+    .image-section {
         grid-template-columns: 1fr;
     }
 
-    .div-0 {
-        grid-column: span 1;
+    h1 {
+        font-size: 3.5em;
+    }
+
+    .page {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 520px) {
+    h1 {
+        font-size: 2.7em;
+    }
+
+    .hero p,
+    p,
+    li {
+        font-size: 1.05em;
     }
 }
