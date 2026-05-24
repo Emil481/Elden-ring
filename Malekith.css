@@ -102,3 +102,9 @@ img {
 .div-5 {
     min-height: 120px;
 }
+
+.div-4,
+.div-5 {
+    text-align: left;
+    line-height: 1.45;
+}
